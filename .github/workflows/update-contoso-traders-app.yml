@@ -46,6 +46,10 @@ env:
 
 jobs:
   provision:
+    permissions:
+    contents: read
+    pull-requests: write
+    
     runs-on: ubuntu-22.04
     env:
       AADUSERNAME: ${{ secrets.AADUSERNAME }}
